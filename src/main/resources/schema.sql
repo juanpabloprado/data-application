@@ -1,0 +1,1 @@
+create table people(first varchar, last varchar, email varchar);
