@@ -67,7 +67,7 @@ public class BatchConfig {
             FlatFileItemReader<Person> reader,
             JdbcBatchItemWriter<Person> writer) {
 
-        Step step = stepBuilderFactory.get("file=to-database")
+        Step step = stepBuilderFactory.get("file-to-database")
                 .<Person, Person>chunk(5)
                 .reader(reader)
                 .writer(writer)
